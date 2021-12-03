@@ -30,7 +30,7 @@ while x <= 300:
     solution_1_list.append(x)
     x += 9
 
-# Solution 2
+#  Solution 2
 
 y = 0
 solution_2_list = []
@@ -52,6 +52,27 @@ while y <= 300:
         solution_2_list.append(y)
         y += 9
 
-# Test both solutions provide same answer.
+#  Solution 3
 
-print(solution_2_list == solution_1_list)
+solution_3_list = []
+
+i = 0
+
+while i <= 300:
+    if i <= 100:
+        print(i)
+        solution_3_list.append(i)
+        i += 7
+    elif i <= 200:
+        print(i)
+        solution_3_list.append(i)
+        i += 8
+    else:
+        print(i)
+        solution_3_list.append(i)
+        i += 9
+
+# Test solutions to ensure they all provide same answer.
+
+if solution_1_list == solution_2_list == solution_3_list:
+    print("SUCCESS")
